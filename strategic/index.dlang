@@ -1,0 +1,28 @@
+/*
+ * Domain strategic classifications
+ * Classifies domains and bounded contexts by their strategic importance
+ * Reference: Eric Evans, "Domain-Driven Design" (2003)
+ */
+
+Namespace Patterns.Strategic {
+
+    /*
+     * The core differentiating capability of the business.
+     * This is where competitive advantage lives and where the most
+     * investment in modeling and design should be made.
+     */
+    Classification CoreDomain
+
+    /*
+     * Supports the core domain but is not itself a differentiator.
+     * Important to get right, but not where competitive advantage lies.
+     */
+    Classification SupportingDomain
+
+    /*
+     * A well-understood problem that can be solved with off-the-shelf
+     * software, outsourced, or implemented with minimal custom effort.
+     */
+    Classification GenericSubdomain
+
+}

@@ -1,0 +1,17 @@
+/*
+ * DomainLang Patterns — Standard Library
+ * Import "domainlang/patterns" to use these common DDD constructs
+ *
+ * Namespaces:
+ *   Patterns.Strategic   — CoreDomain, SupportingDomain, GenericSubdomain
+ *   Patterns.Evolution   — Genesis, CustomBuilt, Product, Commodity
+ *   Patterns.Archetypes  — Execution, Engagement, Analysis, Gateway, Infrastructure, Compliance
+ *   Patterns.Governance  — Architectural, Organizational, Technical, Process
+ *   Patterns.Meta        — Status, Language, Repository, Documentation, SLA, and more
+ */
+
+import "@strategic"
+import "@evolution"
+import "@archetypes"
+import "@governance"
+import "@metadata"

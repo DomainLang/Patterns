@@ -1,0 +1,45 @@
+/*
+ * Bounded context archetype classifications
+ * Classifies bounded contexts by their primary architectural role
+ * Reference: Vlad Khononov, "Learning Domain-Driven Design" (2021)
+ */
+
+Namespace Patterns.Archetypes {
+
+    /*
+     * Executes core business processes and workflows.
+     * Contains the most complex business logic and domain rules.
+     */
+    Classification Execution
+
+    /*
+     * User-facing, focused on interaction and experience.
+     * Orchestrates calls to other contexts on behalf of users.
+     */
+    Classification Engagement
+
+    /*
+     * Provides analytics, reporting, and decision-support capabilities.
+     * Typically consumes data from other contexts.
+     */
+    Classification Analysis
+
+    /*
+     * Handles integration with external systems and services.
+     * Translates between internal and external protocols and models.
+     */
+    Classification Gateway
+
+    /*
+     * Provides shared technical infrastructure capabilities.
+     * Examples: identity, notifications, file storage.
+     */
+    Classification Infrastructure
+
+    /*
+     * Enforces regulatory, legal, or policy requirements.
+     * Cross-cutting concern that may constrain other contexts.
+     */
+    Classification Compliance
+
+}

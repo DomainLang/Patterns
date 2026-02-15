@@ -1,0 +1,33 @@
+/*
+ * Wardley evolution stage classifications
+ * Classifies bounded contexts by their evolution stage on a Wardley Map
+ * Reference: Simon Wardley, "Wardley Maps" (2016)
+ */
+
+Namespace Patterns.Evolution {
+
+    /*
+     * Novel and poorly understood. Requires exploration and experimentation.
+     * High uncertainty, high potential for differentiation.
+     */
+    Classification Genesis
+
+    /*
+     * Better understood but still requires custom implementation.
+     * Differentiating, but emerging practices exist.
+     */
+    Classification CustomBuilt
+
+    /*
+     * Well-understood, increasingly standardized.
+     * Off-the-shelf solutions exist; differentiation is harder.
+     */
+    Classification Product
+
+    /*
+     * Highly standardized, utility-like.
+     * Best consumed as a service; no differentiation value.
+     */
+    Classification Commodity
+
+}

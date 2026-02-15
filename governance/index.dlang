@@ -1,0 +1,32 @@
+/*
+ * Governance decision classifications
+ * Classifies decisions, policies, and rules by their scope and nature
+ */
+
+Namespace Patterns.Governance {
+
+    /*
+     * Decisions about system structure, component boundaries,
+     * integration patterns, and technology selection.
+     */
+    Classification Architectural
+
+    /*
+     * Decisions about team structure, ownership,
+     * communication, and ways of working.
+     */
+    Classification Organizational
+
+    /*
+     * Implementation-level decisions about frameworks,
+     * libraries, coding standards, and technical practices.
+     */
+    Classification Technical
+
+    /*
+     * Decisions about business processes, workflows,
+     * and operational procedures.
+     */
+    Classification Process
+
+}

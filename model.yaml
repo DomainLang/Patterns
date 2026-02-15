@@ -1,0 +1,12 @@
+model:
+  name: domainlang/patterns
+  version: 1.0.0
+  entry: index.dlang
+
+paths:
+  "@": "./"
+  "@strategic": "./strategic"
+  "@evolution": "./evolution"
+  "@archetypes": "./archetypes"
+  "@governance": "./governance"
+  "@metadata": "./metadata"

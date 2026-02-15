@@ -1,0 +1,53 @@
+/*
+ * Common metadata key declarations
+ * Reusable metadata keys for annotating bounded contexts
+ */
+
+Namespace Patterns.Meta {
+
+    /*
+     * Lifecycle status of the bounded context
+     * Suggested values: Discovery, Development, Production, Sunset, Deprecated
+     */
+    Metadata Status
+
+    /* Primary programming language used in the bounded context */
+    Metadata Language
+
+    /* Source code repository URL */
+    Metadata Repository
+
+    /* Documentation URL or reference */
+    Metadata Documentation
+
+    /*
+     * Service-level agreement or target
+     * Suggested values: "99.9%", "99.99%", "best-effort"
+     */
+    Metadata SLA
+
+    /*
+     * Deployment target or runtime environment
+     * Suggested values: Kubernetes, Serverless, OnPremise, PaaS
+     */
+    Metadata DeploymentTarget
+
+    /*
+     * Primary API style exposed by the bounded context
+     * Suggested values: REST, gRPC, GraphQL, Messaging, None
+     */
+    Metadata APIStyle
+
+    /*
+     * Primary data storage technology
+     * Suggested values: PostgreSQL, MongoDB, EventStore, DynamoDB, etc.
+     */
+    Metadata DataStore
+
+    /*
+     * Business criticality level
+     * Suggested values: Critical, High, Medium, Low
+     */
+    Metadata Criticality
+
+}
