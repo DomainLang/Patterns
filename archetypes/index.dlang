@@ -4,7 +4,7 @@
  * Reference: Vlad Khononov, "Learning Domain-Driven Design" (2021)
  */
 
-Namespace Patterns.Archetypes {
+Namespace Archetypes {
 
     /*
      * Executes core business processes and workflows.

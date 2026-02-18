@@ -4,7 +4,7 @@
  * Reference: Simon Wardley, "Wardley Maps" (2016)
  */
 
-Namespace Patterns.Evolution {
+Namespace Evolution {
 
     /*
      * Novel and poorly understood. Requires exploration and experimentation.

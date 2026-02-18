@@ -3,7 +3,7 @@
  * Reusable metadata keys for annotating bounded contexts
  */
 
-Namespace Patterns.Meta {
+Namespace Meta {
 
     /*
      * Lifecycle status of the bounded context

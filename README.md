@@ -13,12 +13,12 @@ dlang add domainlang/patterns@v1.0.0
 ```dlang
 import "domainlang/patterns"
 
-BoundedContext Orders for Sales as Patterns.Strategic.CoreDomain {
+BoundedContext Orders for Sales as Strategic.CoreDomain {
     description: "Order lifecycle"
 
     metadata {
-        Patterns.Meta.Status: "Production"
-        Patterns.Meta.Language: "TypeScript"
+        Meta.Status: "Production"
+        Meta.Language: "TypeScript"
     }
 }
 ```
@@ -28,21 +28,33 @@ All classifications and metadata keys are exported from the package entry point 
 ```dlang
 import "domainlang/patterns"
 
-BoundedContext Billing for Finance as Patterns.Strategic.SupportingDomain {
+BoundedContext Billing for Finance as Strategic.SupportingDomain {
     metadata {
-        Patterns.Meta.Language: "C#"
-        Patterns.Meta.DeploymentTarget: "Kubernetes"
+        Meta.Language: "C#"
+        Meta.DeploymentTarget: "Kubernetes"
     }
 
     decisions {
-        decision [Patterns.Governance.Architectural] CQRS: "Use CQRS for read/write separation"
+        decision [Governance.Architectural] CQRS: "Use CQRS for read/write separation"
+    }
+}
+```
+
+Use an import alias if you prefer a qualified prefix:
+
+```dlang
+import "domainlang/patterns" as Patterns
+
+BoundedContext Orders for Sales as Patterns.Strategic.CoreDomain {
+    metadata {
+        Patterns.Meta.Status: "Production"
     }
 }
 ```
 
 ## Namespaces
 
-### `Patterns.Strategic`
+### `Strategic`
 
 Domain classifications from Eric Evans' strategic design.
 
@@ -52,7 +64,7 @@ Domain classifications from Eric Evans' strategic design.
 | `SupportingDomain` | Supports the core domain but is not a differentiator |
 | `GenericSubdomain` | Well-understood, can be outsourced or bought off the shelf |
 
-### `Patterns.Evolution`
+### `Evolution`
 
 Wardley Map evolution stages for classifying bounded context maturity.
 
@@ -63,7 +75,7 @@ Wardley Map evolution stages for classifying bounded context maturity.
 | `Product` | Well-understood, increasingly standardized |
 | `Commodity` | Highly standardized, utility-like |
 
-### `Patterns.Archetypes`
+### `Archetypes`
 
 Bounded context archetypes describing their primary architectural role.
 
@@ -76,7 +88,7 @@ Bounded context archetypes describing their primary architectural role.
 | `Infrastructure` | Shared technical infrastructure capabilities |
 | `Compliance` | Enforces regulatory, legal, or policy requirements |
 
-### `Patterns.Governance`
+### `Governance`
 
 Decision classifications for tagging decisions, policies, and rules.
 
@@ -87,7 +99,7 @@ Decision classifications for tagging decisions, policies, and rules.
 | `Technical` | Frameworks, libraries, coding standards |
 | `Process` | Business processes, workflows, procedures |
 
-### `Patterns.Meta`
+### `Meta`
 
 Common metadata keys for annotating bounded contexts.
 

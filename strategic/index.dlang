@@ -4,7 +4,7 @@
  * Reference: Eric Evans, "Domain-Driven Design" (2003)
  */
 
-Namespace Patterns.Strategic {
+Namespace Strategic {
 
     /*
      * The core differentiating capability of the business.

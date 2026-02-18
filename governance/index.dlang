@@ -3,7 +3,7 @@
  * Classifies decisions, policies, and rules by their scope and nature
  */
 
-Namespace Patterns.Governance {
+Namespace Governance {
 
     /*
      * Decisions about system structure, component boundaries,

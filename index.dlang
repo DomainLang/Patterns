@@ -3,11 +3,15 @@
  * Import "domainlang/patterns" to use these common DDD constructs
  *
  * Namespaces:
- *   Patterns.Strategic   — CoreDomain, SupportingDomain, GenericSubdomain
- *   Patterns.Evolution   — Genesis, CustomBuilt, Product, Commodity
- *   Patterns.Archetypes  — Execution, Engagement, Analysis, Gateway, Infrastructure, Compliance
- *   Patterns.Governance  — Architectural, Organizational, Technical, Process
- *   Patterns.Meta        — Status, Language, Repository, Documentation, SLA, and more
+ *   Strategic   — CoreDomain, SupportingDomain, GenericSubdomain
+ *   Evolution   — Genesis, CustomBuilt, Product, Commodity
+ *   Archetypes  — Execution, Engagement, Analysis, Gateway, Infrastructure, Compliance
+ *   Governance  — Architectural, Organizational, Technical, Process
+ *   Meta        — Status, Language, Repository, Documentation, SLA, and more
+ *
+ * Tip: use an import alias for brevity:
+ *   import "domainlang/patterns" as Patterns
+ *   → Patterns.Strategic.CoreDomain
  */
 
 import "@strategic"
